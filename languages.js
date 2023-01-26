@@ -15,20 +15,18 @@ let languages = {
 }
 
 // define language via window hash
-if (window.location.hash) {
-  if (window.location.hash === "#es"){
-    hi.textContent = languages.es.welcome;
-  } else if (window.location.hash === "#pt"){
-    hi.textContent = languages.pt.welcome;
-  } else {
-    hi.textContent = languages.eng.welcome;
+function setLanguage(){
+  if (window.location.hash) {
+    if (window.location.hash === "#es"){
+      hi.textContent = languages.es.welcome;
+    } else if (window.location.hash === "#pt"){
+      hi.textContent = languages.pt.welcome;
+    } else {
+      hi.textContent = languages.eng.welcome;
+    }
   }
 }
-
-// define language reload onclick illiteration
-
-for (i = 0; i <= dataReload.length; i++){
-  dataReload[i].onclick = function() {
-    window.location.reload(true);
-  };
-}
+window.addEventListener('hashchange', () => {
+  setLanguage();
+}, false);
+setLanguage();
