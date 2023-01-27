@@ -78,9 +78,13 @@ label{
 section {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: whitesmoke;
   overflow-x: hidden;
+}
+
+#home{
+  justify-content: space-evenly;
 }
 
 /* ================================================ */
@@ -292,7 +296,9 @@ nav a:hover {
   z-index: 2;
   left: 0;
 }
-
+img#signature{
+  max-width: 50%;
+}
 #content-box-video {
   position: absolute;
   display: flex;
@@ -306,21 +312,24 @@ nav a:hover {
   background-image: linear-gradient(180deg, var(--primary-bg-clr),60%, var(--secondary-bg-clr));
   z-index: 2;
 }
-/* @media screen and (min-width: 735px) {
-  #content-box-video {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: fit-content;
-      margin-top: 2.5rem;
-      margin-left: 5rem;
-      margin-right: 5rem;
-      margin-bottom: 5rem;
-      background-image: linear-gradient(180deg, var(--primary-bg-clr), 60%, var(--secondary-bg-clr));
-      z-index: 2;
-    }
-} */
+@media screen and (min-width: 735px) {
+  #videos {
+      display: grid;
+      gap: .5rem;
+      padding: .5rem;
+      grid-template-columns: repeat(4, 1fr);
+  }
+  #video1{
+    grid-column: span 4;
+  }
+  #video2{
+    grid-column: span 2;
+  }
+  #video3{
+    grid-column: span 2;
+  }
+
+}
 
 #content-box-form {
   display: flex;
@@ -341,7 +350,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: cornflowerblue;
+  background-image: linear-gradient(.25turn, var(--primary-accent-clr), var(--secondary-bg-clr));
   
 }
 .icons{
