@@ -19,11 +19,11 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav id="nav-bar" class="nav-bar">
       <ul class="nav-section">
-        <li><a href="#home">Home</< /li>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a id="link-home" href="#home">Home</< /li>
+        <li><a id="link-bio" href="#bio">Bio</a></li>
+        <li><a id="link-music" href="#music">Music</a></li>
+        <li><a id="link-video" href="#video">Video</a></li>
+        <li><a id="link-contact" href="#contact">Contact</a></li>
       </ul>
       <ul>
         <li><a href="#eng" data-reload="">English</a></li>
@@ -44,7 +44,7 @@
         </div>
         <div class="col">
           <h1 class="mt-5">Cristiano Ludwig</h1>
-          <p id="hi">Musician, Composer, Teacher</p>
+          <p id="home-intro">Musician, Composer, Teacher</p>
         </div>
 
       </div>
@@ -55,16 +55,12 @@
         <span id="bio-bg-header"></span>
       </div>
       <div class="row" id="content-box">
-        <h2 class="text-center">About the Artist</h2>
+        <h2 class="text-center" id="bio-title">About the Artist</h2>
           <div class="col text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p id="bio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Placeat esse, reprehenderit iste modi pariatur dignissimos
               illum nostrum porro vel maiores nesciunt veritatis, asperiores,
               quae debitis repudiandae aspernatur assumenda atque obcaecati.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quae qui adipisci consequatur cupiditate esse dolorum,
-              magnam dicta nobis totam? Ipsam dolorum illum porro sunt
-              necessitatibus enim in, quidem fugiat libero?</p>
             <img src="images/crisSignature.png" alt="Cristiano's Signature" id="signature"></p>
             </div>  
         </div>
@@ -75,15 +71,15 @@
     </section>
     <section id="music">
       <div class="row p-5">
-        <h2 class="text-center">Music</h2>
+        <h2 class="text-center" id="music-title">Music</h2>
           <div class="row text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p id="music-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Nostrum eum nulla dolor reprehenderit ad minus et eligendi
               mollitia, repudiandae nisi nam exercitationem laboriosam modi
               blanditiis rem voluptatem nobis eos commodi.</p>
           </div>
           <div class="row text-center">
-            <h3>You can listen and purchase my music on spotify here</h3>
+            <h3 id="music-subhead">You can listen and purchase my music on spotify here</h3>
             <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg"
               target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
           </div>
@@ -93,7 +89,7 @@
     </section>
     <section id="video">
         <div class="row" id="content-box-video">
-        <h2 class="text-center">You can watch my videos on my Youtube channel here</h1>
+        <h2 class="text-center" id="video-title">You can watch my videos on my Youtube channel here</h1>
             <a href="https://www.youtube.com/@cristianoludwig5290" target="_blank" class="text-center">www.youtube.com/@cristianoludwig5290</a>
             <div class="container" id="videos">
                 <iframe id="video1" width="100%" height="auto" src="https://www.youtube.com/embed/xquDUITPVXk" title="YouTube video player"
@@ -115,26 +111,26 @@
     <section id="contact">
       <div class="container">
         <div class="row" id="content-box-form">
-          <h2 class="text-center m-3">Contact Form</h2>
+          <h2 class="text-center m-3" id="form-title">Contact Form</h2>
             <div class="col-4">
-              <label for="name">Name</label>
+              <label for="name" id="form-person">Name</label>
               <input type="text" class="form-control" aria-label="name">
             </div>
             <div class="col-4">
-              <label for="email">Email</label>
+              <label for="email" id="form-email">Email</label>
               <input type="text" class="form-control" aria-label="email">
             </div>
             <div class="col-4">
-              <label for="phone">Phone</label>
+              <label for="phone" id="form-phone">Phone</label>
               <input type="text" class="form-control" aria-label="phone">
             </div>
           <div class="row mt-1">
-              <label class="mt-1">Message</label>
+              <label class="mt-1" id="form-message">Message</label>
               <textarea name="" id="" cols="10" rows="3"></textarea>
           </div>
           <div class="row">
             <div class="col m-2">
-              <button class="text-bg-dark px-5">Send</button>
+              <button class="text-bg-dark px-5" id="form-button">Send</button>
             </div>
           </div>
         </div>
