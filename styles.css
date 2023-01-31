@@ -101,7 +101,7 @@ section {
 
 .home-content {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -136,12 +136,12 @@ nav > a {
 
 .nav-toggle-label {
   position: absolute;
-  top: 1rem;
-  right: 0;
+  top: 1.5rem;
+  left: 0;
   height: 90%;
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .nav-toggle-label span,
@@ -150,7 +150,7 @@ nav > a {
   display: block;
   background: var(--primary-accent-clr);
   height: 3px;
-  width: 2em;
+  width: 2rem;
   border-radius: 2px;
   position: relative;
 }
@@ -170,11 +170,12 @@ nav > a {
 }
 
 nav {
+  
   position: absolute;
   background-color: var(--secondary-bg-clr);
-  text-align: right;
-  width: 100%;
-  right: 0;
+  text-align: left;
+  width: 25%;
+  left: 0;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -191,7 +192,7 @@ nav ul {
 nav li {
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 nav a {
@@ -317,7 +318,6 @@ nav a:hover {
   margin-bottom: 5rem;
   background-image: linear-gradient(180deg, var(--primary-bg-clr),91%, var(--secondary-bg-clr));
   z-index: 2;
-  left: 0;
 }
 img#signature{
   max-width: 50%;
