@@ -21,7 +21,7 @@ let formButton = document.getElementById('form-button');
 // set language translations
 let languages = {
   eng: {
-    welcome: "Hello there",
+    welcome: "Musician, Composer, Teacher",
     navhome: "Home",
     navbio: "Bio",
     navmusic: "Music",
@@ -41,7 +41,7 @@ let languages = {
     formbutton: "Send"
   },
   es: {
-    welcome: "Bem venidos",
+    welcome: "Músico, Compositor, Profesor",
     navhome: "Casa",
     navbio: "Biografía",
     navmusic: "Música",
@@ -60,7 +60,7 @@ let languages = {
     formbutton: "Enviar"
   },
   pt: {
-    welcome: "Bem vindo",
+    welcome: "Músico, Compositor, Professor",
     navhome: "Casa",
     navbio: "Biografia",
     navmusic: "Música",
