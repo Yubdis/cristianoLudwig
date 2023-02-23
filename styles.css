@@ -10,11 +10,11 @@
 }
 
 :root {
-  
+
   --primary-bg-clr:rgb(244,246,238);
-  --secondary-bg-clr:rgb(92,92,109);
-  --primary-accent-clr: rgb(38,38,57);
-  --secondary-accent-clr: rgb(0,0,0);
+  --secondary-bg-clr:rgb(139,142,156);
+  --primary-accent-clr: rgb(81,84,99);
+  --secondary-accent-clr: rgb(13, 18, 16);
 
   --ff-Mo-: 'Montserrat', sans-serif;
   --ff-Bo-: 'Libre Bodoni', serif;
@@ -91,7 +91,7 @@ section {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: whitesmoke;
+  /* background: linear-gradient(0deg, var(--primary-bg-clr), var(--primary-accent-clr)); */
   overflow-x: hidden;
 }
 
@@ -115,7 +115,7 @@ section {
 /* ================================================ */
 header {
   display: flex;
-  background-image: linear-gradient(.25turn, var(--primary-accent-clr),var(--secondary-bg-clr));
+  background: var(--secondary-bg-clr);
   color: var(--primary-bg-clr);
   font-family: var(--ff-Bo-);
   position: fixed;
@@ -133,6 +133,10 @@ nav > a {
 .nav-toggle {
   display: none;
 }
+
+/* .nav-section {
+  display: none;
+} */
 
 .nav-toggle-label {
   position: absolute;
@@ -230,7 +234,8 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: auto auto minmax(450, 2fr) 2fr;
+    grid-template-columns: auto auto;
+    top: 2rem;
     margin-top: 0;
     padding: .5rem;
   }
@@ -298,7 +303,7 @@ nav a:hover {
 
 #bio-bg-header {
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   height: 15vh;
   padding: 0;
   left:0;
@@ -306,8 +311,16 @@ nav a:hover {
   background-image: linear-gradient(180deg, var(--primary-accent-clr),var(--primary-bg-clr));
 }
 
+section bio {
+  flex-direction: column;
+}
+
+picture {
+  padding: 1rem;
+  max-width:min-content;
+}
 #content-box {
-  position: absolute;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,7 +336,6 @@ img#signature{
   max-width: 50%;
 }
 #content-box-video {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,9 +348,15 @@ img#signature{
   z-index: 2;
 }
 @media screen and (min-width: 735px) {
+  
+  #content-box-video {
+    flex-direction: column;
+  }
+  
   #videos {
       display: grid;
-      max-width: 80%;
+      flex-grow: 1;
+      max-width: 100%;
       gap: .5rem;
       padding: .5rem;
       grid-template-columns: repeat(4, 1fr);
@@ -360,15 +378,30 @@ img#signature{
   }
 }
 
+
+.music-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-sub ul {
+  list-style: none;
+}
+
 #content-box-form {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-  margin-top: 2.5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  top: 2.5rem;
+  margin: auto;
   background-color: rgba(252, 235, 209, 0.805);
+}
+
+.contact {
+  flex-direction: column;
 }
 
 i {

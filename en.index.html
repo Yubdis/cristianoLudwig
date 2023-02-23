@@ -29,10 +29,10 @@
         <li><a id="link-video" href="#en-video">Video</a></li>
         <li><a id="link-contact" href="#en-contact">Contact</a></li>
       </ul>
-      <ul>
-        <li><a href="en.index.html" data-reload="">English</a></li>
-        <li><a href="pt.index.html" data-reload="">Portugues</a></li>
-        <li><a href="es.index.html" data-reload="">Espanol</a></li>
+      <ul class="nav-languages">
+        <li><a href="en.index.html" data-reload="">EN</a></li>
+        <li><a href="pt.index.html" data-reload="">PT</a></li>
+        <li><a href="es.index.html" data-reload="">ES</a></li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -62,26 +62,37 @@
               illum nostrum porro vel maiores nesciunt veritatis, asperiores,
               quae debitis repudiandae aspernatur assumenda atque obcaecati.</p>
             <img src="images/crisSignature.png" alt="Cristiano's Signature" id="signature">
-            </div>  
-        </div>
-        <div class="row" id="about-pic">
-          <img src="images/@arunamcruz-79.avif"  alt="Cristiano">
+            <!-- <div class="row" id="about-pic">
+              <picture>
+                <source media="(max-width:400px)" srcset="images/CrisPark400.avif" >
+                <source media="(max-width:700px)" srcset="images/CrisPark700.avif">
+                <source media="(max-width:1100px)" srcset="images/CrisPark1100.avif">
+                <source media="(max-width:1500px)" srcset="images/CrisPark1500.avif">
+          
+                <img src="images/CrisPark.jpg" alt="Cris Sitting" style="width:auto;">
+              </picture>
+            </div> -->
+          </div>  
         </div>
 
     </section>
     <section id="en-music">
       <div class="row p-5">
         <h2 class="text-center" id="music-title">Music</h2>
-          <div class="row text-center">
+          <div class="music-about">
             <p id="music-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Nostrum eum nulla dolor reprehenderit ad minus et eligendi
               mollitia, repudiandae nisi nam exercitationem laboriosam modi
               blanditiis rem voluptatem nobis eos commodi.</p>
           </div>
-          <div class="row text-center">
-            <h3 id="music-subhead">You can listen and purchase my music on spotify here</h3>
-            <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg"
-              target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+          <div class="music-sub">
+            <h3 id="music-subhead" class="text-center">You can listen and purchase my music on spotify here</h3>
+            <ul>
+              <li>
+                <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg"
+                  target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+              </li>
+            </ul>
           </div>
           <img src="images/musicWriting.png" alt="Written Music">
       </div>
@@ -92,23 +103,23 @@
         <h2 class="text-center" id="video-title">You can watch my videos on my Youtube channel here</h1>
             <a href="https://www.youtube.com/@cristianoludwig5290" target="_blank" class="text-center">www.youtube.com/@cristianoludwig5290</a>
             <div class="container" id="videos">
-                <iframe id="video1" width="100%" height="auto" src="https://www.youtube.com/embed/xquDUITPVXk" title="YouTube video player"
+                <iframe id="video1" width="100%" height="100%" src="https://www.youtube.com/embed/xquDUITPVXk" title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
-                <iframe id="video2" width="100%" height="auto" src="https://www.youtube.com/embed/heNU1jvA6wQ" title="YouTube video player"
+                <iframe id="video2" width="100%" height="100%" src="https://www.youtube.com/embed/heNU1jvA6wQ" title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
-                <iframe id="video3" width="100%" height="auto" src="https://www.youtube.com/embed/CuKB76F0t9I" title="YouTube video player"
+                <iframe id="video3" width="100%" height="100%" src="https://www.youtube.com/embed/CuKB76F0t9I" title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
             </div>
-        </div>
+          </div>
     </section>
 
-    <section id="en-contact">
+    <section id="en-contact" class="contact">
       <div class="container">
         <div class="row" id="content-box-form">
           <h2 class="text-center m-3" id="form-title">Contact</h2>
