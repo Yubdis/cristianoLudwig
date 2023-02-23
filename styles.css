@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 2rem;
 }
 
 body {
@@ -84,7 +85,6 @@ label{
 #signature{
   font-family: var(--ff-Bo-);
   font-weight: var(--fw-Bo-6);
-  font-size: 1.3rem;
 }
 
 section {
@@ -207,7 +207,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(244, 246, 238);
+  color: var(--primary-bg-clr);
 }
 
 .nav-toggle:checked~nav {
@@ -248,9 +248,10 @@ nav a:hover {
     all: unset;
     grid-column: 2 / 3;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    padding: .3rem;
   }
 
   nav a {
@@ -268,6 +269,10 @@ nav a:hover {
     position: relative;
     left: 0;
   }
+
+/* nav a:hover{
+  background-color: steelblue;
+} */
 
   nav a::before {
     content: '';
@@ -293,22 +298,28 @@ nav a:hover {
   }
 
   nav li {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     margin-left: .5rem;
-    margin-bottom: 0;
   }
 }
 /*  =========================================================== */
     /* ================ end of navbar ====================== */
 /*  =========================================================== */ 
 
-#bio-bg-header {
-  position: absolute;
-  /* z-index: 1; */
-  height: 15vh;
-  padding: 0;
-  left:0;
-  max-width: 100%;
-  background-image: linear-gradient(180deg, var(--primary-accent-clr),var(--primary-bg-clr));
+.odds {
+  background-image: linear-gradient(180deg,
+    var(--secondary-bg-clr) 5%,
+    var(--primary-bg-clr));
+}
+
+.evens {
+  background-image: linear-gradient(180deg,
+    var(--primary-bg-clr) 50%,
+    var(--secondary-bg-clr));
+}
+.home-content {
+  text-align: center;
 }
 
 section bio {
@@ -329,11 +340,14 @@ picture {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
-  background-image: linear-gradient(180deg, var(--primary-bg-clr),91%, var(--secondary-bg-clr));
   z-index: 2;
 }
 img#signature{
-  max-width: 50%;
+  max-width: 30%;
+}
+
+.music {
+  background-color: var(--primary-bg-clr);
 }
 #content-box-video {
   display: flex;
@@ -344,7 +358,6 @@ img#signature{
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
-  background-image: linear-gradient(180deg, var(--primary-bg-clr),60%, var(--secondary-bg-clr));
   z-index: 2;
 }
 @media screen and (min-width: 735px) {
@@ -353,6 +366,9 @@ img#signature{
     flex-direction: column;
   }
   
+  .container {
+    display: flex;
+  }
   #videos {
       display: grid;
       flex-grow: 1;
@@ -397,7 +413,7 @@ img#signature{
   max-width: fit-content;
   top: 2.5rem;
   margin: auto;
-  background-color: rgba(252, 235, 209, 0.805);
+  background-color: var(--primary-bg-clr);
 }
 
 .contact {
