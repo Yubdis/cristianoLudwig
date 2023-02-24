@@ -43,8 +43,15 @@
   <main>
 
     <section class="odds" id="en-home">
-      
-      <img src="images/IMG_7455.jpg" Alt="Cristiano playing Sax">
+       
+      <img sizes="(max-width: 1380px) 100vw, 1380px" srcset="
+        images/CrisBoardwalk200.avif 200w,
+        images/CrisBoardwalk645.avif 645w,
+        images/CrisBoardwalk941.avif 941w,
+        images/CrisBoardwalk1188.avif 1188w,
+        images/CrisBoardwalk1313.avif 1313w,
+        images/CrisBoardwalk1380.avif 1380w" src="images/CrisBoardwalk1380.avif" alt="Cristiano Playing Sax">
+    
       <div class="home-content">
         <h1>Cristiano Ludwig</h1>
         <pid="home-intro">Musician, Composer, Teacher</p>
@@ -79,6 +86,17 @@
     <section class="music" id="en-music">
       <div class="row p-5">
         <h2 class="text-center" id="music-title">Music</h2>
+          <picture>
+            <img sizes="(max-width: 1380px) 100vh, 1380px" srcset="
+              images/CrisParkCrop200.avif 200w,
+              images/CrisParkCrop512.avif 512w,
+              images/CrisParkCrop879.avif 879w,
+              images/CrisParkCrop848.avif 848w,
+              images/CrisParkCrop1057.avif 1057w,
+              images/CrisParkCrop1206.avif 1206w,
+              images/CrisParkCrop1302.avif 1302w,
+              images/CrisParkCrop1380.avif 1380w" src="images/CrisParkCrop1380.jpg" alt="Cristiano Sitting">
+          </picture>
           <div class="music-about">
             <p id="music-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Nostrum eum nulla dolor reprehenderit ad minus et eligendi
@@ -119,19 +137,19 @@
           </div>
     </section>
 
-    <section class="odds" id="en-contact" class="contact">
+    <section class="odds contact" id="en-contact">
       <div class="container">
         <div class="row" id="content-box-form">
           <h2 class="text-center m-3" id="form-title">Contact</h2>
-            <div class="col-4">
+            <div class="contact-input">
               <label for="name" id="form-person">Name</label>
               <input type="text" class="form-control" aria-label="name">
             </div>
-            <div class="col-4">
+            <div class="contact-input">
               <label for="email" id="form-email">Email</label>
               <input type="text" class="form-control" aria-label="email">
             </div>
-            <div class="col-4">
+            <div class="contact-input">
               <label for="phone" id="form-phone">Phone</label>
               <input type="text" class="form-control" aria-label="phone">
             </div>

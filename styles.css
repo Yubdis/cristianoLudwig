@@ -392,6 +392,10 @@ img#signature{
   #video3{
     grid-area: video3;
   }
+  contact-input {
+    flex-direction: row;
+    inl
+  }
 }
 
 
@@ -404,6 +408,7 @@ img#signature{
 
 .music-sub ul {
   list-style: none;
+  padding: 0;
 }
 
 #content-box-form {
