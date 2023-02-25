@@ -43,15 +43,17 @@
   <main>
 
     <section class="odds" id="en-home">
-       
-      <img sizes="(max-width: 1380px) 100vw, 1380px" srcset="
-        images/CrisBoardwalk200.avif 200w,
-        images/CrisBoardwalk645.avif 645w,
-        images/CrisBoardwalk941.avif 941w,
-        images/CrisBoardwalk1188.avif 1188w,
-        images/CrisBoardwalk1313.avif 1313w,
-        images/CrisBoardwalk1380.avif 1380w" src="images/CrisBoardwalk1380.avif" alt="Cristiano Playing Sax">
-    
+      <picture>
+        <img sizes="(max-width: 1380px) 100vw, 1380px" srcset="
+          images/CrisBoardwalk200.avif 200w,
+          images/CrisBoardwalk645.avif 645w,
+          images/CrisBoardwalk941.avif 941w,
+          images/CrisBoardwalk1188.avif 1188w,
+          images/CrisBoardwalk1313.avif 1313w,
+          images/CrisBoardwalk1380.avif 1380w" src="images/CrisBoardwalk1380.avif" alt="Cristiano Playing Sax">
+      
+
+      </picture>
       <div class="home-content">
         <h1>Cristiano Ludwig</h1>
         <pid="home-intro">Musician, Composer, Teacher</p>
@@ -86,17 +88,20 @@
     <section class="music" id="en-music">
       <div class="row p-5">
         <h2 class="text-center" id="music-title">Music</h2>
+        <div class="wrapper-portrait">
           <picture>
-            <img sizes="(max-width: 1380px) 100vh, 1380px" srcset="
-              images/CrisParkCrop200.avif 200w,
-              images/CrisParkCrop512.avif 512w,
-              images/CrisParkCrop879.avif 879w,
-              images/CrisParkCrop848.avif 848w,
-              images/CrisParkCrop1057.avif 1057w,
-              images/CrisParkCrop1206.avif 1206w,
-              images/CrisParkCrop1302.avif 1302w,
-              images/CrisParkCrop1380.avif 1380w" src="images/CrisParkCrop1380.jpg" alt="Cristiano Sitting">
-          </picture>
+              <img sizes="(max-width: 1380px) 100vh, 1380px" srcset="
+                images/CrisParkCrop200.avif 200w,
+                images/CrisParkCrop512.avif 512w,
+                images/CrisParkCrop879.avif 879w,
+                images/CrisParkCrop848.avif 848w,
+                images/CrisParkCrop1057.avif 1057w,
+                images/CrisParkCrop1206.avif 1206w,
+                images/CrisParkCrop1302.avif 1302w,
+                images/CrisParkCrop1380.avif 1380w" src="images/CrisParkCrop1380.jpg" alt="Cristiano Sitting">
+            </picture>
+
+        </div>  
           <div class="music-about">
             <p id="music-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Nostrum eum nulla dolor reprehenderit ad minus et eligendi
@@ -163,10 +168,25 @@
             </div>
           </div>
         </div>
+        <div class="container row">
+          <div class="icons">
+              <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="icons">
+            <a href=""><i id="insta" class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="icons">
+            <a href=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+          </div>
+          <div class="icons">
+            <a href=""><i id="whats" class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <!-- <footer>
     <div class="footer">
       <div class="icons">
           <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
@@ -180,9 +200,9 @@
       <div class="icons">
         <a href=""><i id="whats" class="fa-brands fa-whatsapp"></i></a>
       </div>
-
+      
     </div>
-  </footer>
+  </footer> -->
   <script type="text/javascript" src="languages.js"></script>
 </body>
 </html>

@@ -327,8 +327,9 @@ section bio {
 }
 
 picture {
-  padding: 1rem;
-  max-width:min-content;
+  max-width: 100%;
+  height: auto;
+  
 }
 #content-box {
 
@@ -343,12 +344,23 @@ picture {
   z-index: 2;
 }
 img#signature{
-  max-width: 30%;
+  width: clamp(7em, 30vw, 50vw);
 }
 
 .music {
   background-color: var(--primary-bg-clr);
 }
+
+.wrapper-portrait {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  
+}
+
 #content-box-video {
   display: flex;
   justify-content: center;
@@ -360,8 +372,19 @@ img#signature{
   margin-bottom: 5rem;
   z-index: 2;
 }
+
 @media screen and (min-width: 735px) {
+  body::-webkit-scrollbar {
+      width: .50rem;
+    }
   
+    body::-webkit-scrollbar-track {
+      background-color: var(--primary-bg-clr);
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background-color: var(--primary-accent-clr)
+    }
   #content-box-video {
     flex-direction: column;
   }
@@ -392,10 +415,7 @@ img#signature{
   #video3{
     grid-area: video3;
   }
-  contact-input {
-    flex-direction: row;
-    inl
-  }
+  
 }
 
 
@@ -415,7 +435,7 @@ img#signature{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: fit-content;
+  width: 100%;
   top: 2.5rem;
   margin: auto;
   background-color: var(--primary-bg-clr);
@@ -423,6 +443,13 @@ img#signature{
 
 .contact {
   flex-direction: column;
+}
+
+.icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 i {
@@ -435,11 +462,6 @@ i {
   justify-content: space-evenly;
   background-image: linear-gradient(.25turn, var(--primary-accent-clr), var(--secondary-bg-clr));
   
-}
-.icons{
-  display: flex;
-  flex-wrap: wrap;
-  margin: .5rem;
 }
 #fb{
   color: blue;
