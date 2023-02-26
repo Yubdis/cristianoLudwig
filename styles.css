@@ -107,6 +107,81 @@ section {
   font-size: var(--fs-n);
 }
 
+/* ==============================================================  */
+/*                  sidebar nav menu                               */
+/* ==============================================================  */
+
+.sidebar-wrapper {
+  top: 50px;
+  left: 0;
+  position: fixed;
+  width: 1rem;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  padding: 1rem 0rem;
+}
+
+html:is([data-scroll='0']) .sidebar-wrapper {
+  width: 100%;
+}
+
+html:is([data-scroll='0']) .sidebar-wrapper .menu {
+  width: inherit;
+  visibility: inherit;
+}
+
+.sidebar-wrapper:hover {
+  width: 100%;
+}
+
+.sidebar-wrapper:hover .menu {
+  width: inherit;
+  visibility: inherit;
+}
+
+.sidebar {
+  transform: skewY(22deg);
+  background: #888;
+  width: fit-content;
+  height: auto;
+  padding: 2rem 0em;
+}
+
+.sidebar>.container {
+  transform: skewY(-22deg);
+  margin: 0;
+}
+
+.menu:active,
+.menu:hover {
+  background: #444;
+}
+
+.menu {
+  transform: skewX(-22deg);
+  margin: 0 0.1rem;
+  visibility: hidden;
+
+}
+
+.menu>.container {
+  transform: skewX(22deg);
+  padding: 0rem .1rem;
+
+}
+
+.content {
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+/* ================================================ */
+    /*      ======    End side bar   ========= */
+/* ================================================ */
+
+
 /* ================================================ */
           /* ========== Nav Bar ========== */
 /* ================================================ */
