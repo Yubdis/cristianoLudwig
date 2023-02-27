@@ -398,20 +398,23 @@ nav a:hover {
   text-align: center;
 }
 
+.wrapper-bg-pic {
+  width: 100%;
+  background-image: url(images/CrisBoardwalkMobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .hero {
-  height: 100%;
-  width: auto;
+  background-image: url(images/CrisBoardwalkMobile.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 section bio {
   flex-direction: column;
 }
 
-picture {
-  max-width: 100%;
-  height: auto;
-  
-}
 #content-box {
 
   display: flex;
@@ -466,6 +469,12 @@ img#signature{
     body::-webkit-scrollbar-thumb {
       background-color: var(--primary-accent-clr)
     }
+  
+  .hero {
+    background-image: url(images/CrisBoardwalk2400.jpg);
+    background-size: contain;
+  }
+
   #content-box-video {
     flex-direction: column;
   }
