@@ -92,6 +92,10 @@ section {
   font-family: var(--ff-Mo-);
 }
 
+nav > .nav-languages > li:hover {
+  background-color: var(--primary-accent-clr);
+  color: var(--primary-bg-clr);
+}
 #home{
   position: relative;
 }
@@ -273,9 +277,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: var(--primary-bg-clr);
+  color: var(--primary-accent-clr);
   opacity: 0;
   transition: opacity 150ms ease-in-out;
+}
+
+nav .nav-section a {
+  color: var(--primary-bg-clr);
 }
 
 nav a:hover {
@@ -346,11 +354,7 @@ nav a:hover {
     left: 0;
   }
 
-/* nav a:hover{
-  background-color: steelblue;
-} */
-
-  nav a::before {
+  nav > .nav-section a::before {
     content: '';
     display: block;
     height: 3px;
@@ -364,7 +368,7 @@ nav a:hover {
     transition: transform ease-in-out 250ms;
   }
 
-  nav a:hover::before {
+  nav  >.nav-section a:hover::before {
     transform: scale(1, 1);
   }
 
