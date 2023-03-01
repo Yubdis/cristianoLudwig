@@ -43,10 +43,12 @@
   <main>
   </div>
   <section class="odds" id="en-home">
-    <div class="wrapper-bg-pic"></div>
-    <div class="home-content">
-      <h1>Cristiano Ludwig</h1>
-      <pid="home-intro">Musician, Composer, Teacher</p>
+    <div class="wrapper-bg-pic">
+      <div class="home-content">
+        <h1>Cristiano Ludwig</h1>
+        <p id="home-intro">Musician, Composer, Teacher</p>
+      </div>
+    
     </div>
     <div class="sidebar-wrapper">
       <div class="sidebar downskew collapsed">
@@ -124,46 +126,46 @@
             </picture>
 
         </div>  
-          <div class="music-about">
-              <p id="music-text">Cristiano Ludwig Quarteto nasceu inspirado na paixão pelo jazz e
-                na profunda experiência que Cristiano obteve em Nova Iorque ao
-                vivenciar de perto toda a força e as nuances que esse estilo é
-                capaz de proporcionar. Além de Cristiano no sax tenor, o grupo
-                conta com Antônio Flores na guitarra, Daniel Vargas na bateria e
-                Miguel Tejera nos contrabaixos, todos experientes e renomados
-                músicos da cena instrumental de Porto Alegre. O Quarteto tem o
-                objetivo de proporcionar ao público a experiência de poder
-                desfrutar de música com o autêntico sotaque do Jazz norte
-                americano com um leve toque de Brasil. Pensando nisso, traz um
-                repertório autoral variado, com ritmos brasileiros mesclados a um
-                fraseado jazzístico e composições inspiradas nos grandes nomes
-                do jazz como Sonny Rollins, John Coltrane, Joe Henderson,
-                McCoy Tyner e outros.</p>
-              <p>
-                O grupo gravou seu primeiro álbum em 2021 durante uma das
-                fases críticas da pandemia, e o título, Olhar para o Amanhã,
-                refere-se à esperança por dias melhores que alimentou a criação
-                do trabalho.</p>
-              <p>
-                O disco também conta com as participações especiais de Walt
-                Weiskopf, renomado saxofonista e educador norte americano e
-                também um dos mentores de Cristiano. Marcelo Martins, uma das
-                maiores referencias e influencias do saxofone brasileiro, e
-                também do percussionista Bruno Coelho, talentoso e renomado
-                musico da cena instrumental do RS.
-            
-              </p>
-          <div class="music-sub">
-            <h3 id="music-subhead" class="text-center">You can listen and purchase my music on spotify here</h3>
-            <ul>
-              <li>
-                <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg"
-                  target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
-              </li>
-            </ul>
-          </div>
-          <img src="images/musicWriting.png" alt="Written Music">
-      </div>
+        <div class="music-about">
+            <p id="music-text">Cristiano Ludwig Quarteto nasceu inspirado na paixão pelo jazz e
+              na profunda experiência que Cristiano obteve em Nova Iorque ao
+              vivenciar de perto toda a força e as nuances que esse estilo é
+              capaz de proporcionar. Além de Cristiano no sax tenor, o grupo
+              conta com Antônio Flores na guitarra, Daniel Vargas na bateria e
+              Miguel Tejera nos contrabaixos, todos experientes e renomados
+              músicos da cena instrumental de Porto Alegre. O Quarteto tem o
+              objetivo de proporcionar ao público a experiência de poder
+              desfrutar de música com o autêntico sotaque do Jazz norte
+              americano com um leve toque de Brasil. Pensando nisso, traz um
+              repertório autoral variado, com ritmos brasileiros mesclados a um
+              fraseado jazzístico e composições inspiradas nos grandes nomes
+              do jazz como Sonny Rollins, John Coltrane, Joe Henderson,
+              McCoy Tyner e outros.</p>
+            <p>
+              O grupo gravou seu primeiro álbum em 2021 durante uma das
+              fases críticas da pandemia, e o título, Olhar para o Amanhã,
+              refere-se à esperança por dias melhores que alimentou a criação
+              do trabalho.</p>
+            <p>
+              O disco também conta com as participações especiais de Walt
+              Weiskopf, renomado saxofonista e educador norte americano e
+              também um dos mentores de Cristiano. Marcelo Martins, uma das
+              maiores referencias e influencias do saxofone brasileiro, e
+              também do percussionista Bruno Coelho, talentoso e renomado
+              musico da cena instrumental do RS.
+          
+            </p>
+        </div>
+        <div class="music-sub">
+          <h3 id="music-subhead" class="text-center">You can listen and purchase my music on spotify here</h3>
+          <ul>
+            <li>
+              <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg"
+                target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+            </li>
+          </ul>
+        </div>
+        <img src="images/musicWriting.png" alt="Written Music">
           
     </section>
     <section class="evens" id="en-video">
@@ -188,47 +190,28 @@
     </section>
 
     <section class="odds contact" id="en-contact">
-      <div class="container">
-        <div class="row" id="content-box-form">
-          <h2 class="text-center m-3" id="form-title">Contact</h2>
-            <div class="contact-input">
-              <label for="name" id="form-person">Name</label>
-              <input type="text" class="form-control" aria-label="name">
-            </div>
-            <div class="contact-input">
-              <label for="email" id="form-email">Email</label>
-              <input type="text" class="form-control" aria-label="email">
-            </div>
-            <div class="contact-input">
-              <label for="phone" id="form-phone">Phone</label>
-              <input type="text" class="form-control" aria-label="phone">
-            </div>
-          <div class="row mt-1">
-              <label class="mt-1" id="form-message">Message</label>
-              <textarea name="" id="" cols="10" rows="3"></textarea>
-          </div>
-          <div class="row">
-            <div class="col m-2">
+      <div class="wrapper-contact">
+          <h2 class="contact-input">Contact</h2>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" aria-label="name">
+              <label for="email">Email</label>
+              <input type="text" id="email" aria-label="email">
+              <label for="phone" >Phone</label>
+              <input type="text" id="phone" aria-label="phone">
+              <label for="message" >Message</label>
+              <textarea name="message" id="message" cols="20" rows="3"></textarea>
               <button class="text-bg-dark px-5" id="form-button">Send</button>
-            </div>
-          </div>
+            </form>
         </div>
-        <div class="row">
-          <div class="icons">
-              <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
-          </div>
-          <div class="icons">
-            <a href=""><i id="insta" class="fa-brands fa-instagram"></i></a>
-          </div>
-          <div class="icons">
-            <a href=""><i id="spot" class="fa-brands fa-spotify"></i></a>
-          </div>
-          <div class="icons">
-            <a href=""><i id="whats" class="fa-brands fa-whatsapp"></i></a>
-          </div>
-          
+        <div class="wrapper-icons">  
+          <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
+          <a href=""><i id="insta" class="fa-brands fa-instagram"></i></a>
+          <a href=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+          <a href=""><i id="whats" class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
+      
     </section>
   </main>
   <!-- <footer>

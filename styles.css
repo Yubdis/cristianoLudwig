@@ -62,6 +62,7 @@ h1 {
 }
 h2 {
   font-family: var(--ff-Bo-);
+  text-align: center;
 }
 h3 {
   font-family: var(--ff-Bo-);
@@ -86,6 +87,11 @@ section {
   min-height: 100vh;
   /* background: linear-gradient(0deg, var(--primary-bg-clr), var(--primary-accent-clr)); */
   overflow-x: hidden;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-languages {
@@ -116,7 +122,7 @@ nav > .nav-languages > li:hover {
 /* ==============================================================  */
 
 .sidebar-wrapper {
-  top: 50px;
+  top: 30vh;
   left: 0;
   position: fixed;
   width: 1rem;
@@ -146,7 +152,8 @@ html:is([data-scroll='0']) .sidebar-wrapper .menu {
 
 .sidebar {
   transform: skewY(22deg);
-  background: #888;
+  background: var(--secondary-bg-clr);
+  color: var(--primary-bg-clr);
   width: fit-content;
   height: auto;
   padding: 2rem 0em;
@@ -159,7 +166,7 @@ html:is([data-scroll='0']) .sidebar-wrapper .menu {
 
 .menu:active,
 .menu:hover {
-  background: #444;
+  background: var(--primary-accent-clr);
 }
 
 .menu {
@@ -402,18 +409,11 @@ nav a:hover {
   text-align: center;
 }
 
-.wrapper-bg-pic {
-  width: 100%;
+/* .wrapper-bg-pic {
   background-image: url(images/CrisBoardwalkMobile.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.hero {
-  background-image: url(images/CrisBoardwalkMobile.jpg);
-  background-size: cover;
-  background-position: center;
-}
+} */
 
 section bio {
   flex-direction: column;
@@ -461,22 +461,31 @@ img#signature{
   z-index: 2;
 }
 
+#en-home {
+  background-image: url(images/CrisBoardwalkMobile.jpg);
+  background-size: cover;
+}
+
 @media screen and (min-width: 735px) {
   body::-webkit-scrollbar {
       width: .50rem;
     }
   
-    body::-webkit-scrollbar-track {
-      background-color: var(--primary-bg-clr);
-    }
-  
-    body::-webkit-scrollbar-thumb {
-      background-color: var(--primary-accent-clr)
-    }
-  
-  .hero {
+  body::-webkit-scrollbar-track {
+    background-color: var(--primary-bg-clr);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-accent-clr)
+  }
+
+  #en-home {
     background-image: url(images/CrisBoardwalk2400.jpg);
-    background-size: contain;
+    background-size: cover;
+  }
+
+  .sidebar-wrapper {
+    display: none;
   }
 
   #content-box-video {
@@ -509,9 +518,53 @@ img#signature{
   #video3{
     grid-area: video3;
   }
-  
-}
+  .contact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100vh;
+  }
 
+  .wrapper-contact {
+    width: 80%;
+    margin: 1rem 1rem;
+  }
+
+  .wrapper-contact h2 {
+    margin-top: 0;
+  }
+
+  .wrapper-contact form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper-contact label,
+  .wrapper-contact input,
+  .wrapper-contact textarea,
+  .wrapper-contact button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .wrapper-contact input,
+  .wrapper-contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .wrapper-icons {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+/* ======================================================== */
+/* ===========    End of Large Screen   =================== */
+/* ======================================================== */
 
 .music-sub {
   display: flex;
@@ -525,38 +578,16 @@ img#signature{
   padding: 0;
 }
 
-#content-box-form {
+.wrapper-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  top: 2.5rem;
-  margin: auto;
-  background-color: var(--primary-bg-clr);
-}
-
-.contact {
-  flex-direction: column;
-}
-
-.icons{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  width: 20%;
+  justify-content: space-evenly;
 }
 
 i {
   font-size: 2rem;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-image: linear-gradient(.25turn, var(--primary-accent-clr), var(--secondary-bg-clr));
-  
-}
 #fb{
   color: blue;
   background-color: white;
