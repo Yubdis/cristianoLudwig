@@ -70,6 +70,7 @@ h3 {
 
 p{
   font-family: var(--ff-Mo-);
+  text-align: justify;
 }
 
 label{
@@ -87,11 +88,6 @@ section {
   min-height: 100vh;
   /* background: linear-gradient(0deg, var(--primary-bg-clr), var(--primary-accent-clr)); */
   overflow-x: hidden;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav-languages {
@@ -409,18 +405,16 @@ nav a:hover {
   text-align: center;
 }
 
-/* .wrapper-bg-pic {
+#en-home {
   background-image: url(images/CrisBoardwalkMobile.jpg);
   background-size: cover;
-  background-position: center;
-} */
+}
 
 section bio {
   flex-direction: column;
 }
 
 #content-box {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,22 +425,49 @@ section bio {
   margin-bottom: 5rem;
   z-index: 2;
 }
+
 img#signature{
   width: clamp(7em, 30vw, 50vw);
 }
 
 .music {
   background-color: var(--primary-bg-clr);
+  display: flex;
+  flex-direction: column;
+}
+
+.music-title {
+  margin-top: 2rem;
+}
+
+.music-about {
+  padding: 2rem;
+}
+
+.music-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-sub ul {
+  list-style: none;
+  padding: 0;
+}
+
+.music-notes {
+  width: 100%;
+  object-fit: cover;
 }
 
 .wrapper-portrait {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
-  
+  margin: 2rem;
+  padding: 2rem;
 }
 
 #content-box-video {
@@ -461,10 +482,88 @@ img#signature{
   z-index: 2;
 }
 
-#en-home {
-  background-image: url(images/CrisBoardwalkMobile.jpg);
-  background-size: cover;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
 }
+
+.wrapper-contact {
+  width: 80%;
+  margin: 1rem 1rem;
+}
+
+.wrapper-contact h2 {
+  margin-top: 0;
+}
+
+.wrapper-contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-contact label,
+.wrapper-contact input,
+.wrapper-contact textarea,
+.wrapper-contact button {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  padding: .0rem;
+}
+
+.wrapper-contact input,
+.wrapper-contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.wrapper-icons {
+  display: flex;
+  gap: 2rem;;
+  justify-content: space-evenly;
+}
+
+i {
+  font-size: 2rem;
+}
+
+#fb{
+  color: blue;
+  background-color: white;
+  padding: .2rem;
+  border-radius: 10%;
+}
+
+#insta{
+  color: transparent;
+  background: 
+    linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+  border-radius: 10%;
+  color: white;
+  padding: .2rem;
+}
+
+#spot{
+  color: green;
+  background-color: black;
+  border-radius: 10%;
+  padding: .2rem;
+}
+
+#whats{
+  color: white;
+  background-color: green;
+  border-radius: 10%;
+  padding: .2rem;
+}
+
+/* ================================================================ */
+/* =====================    Larger Screen Start  ================== */
+/* ================================================================ */
 
 @media screen and (min-width: 735px) {
   body::-webkit-scrollbar {
@@ -520,8 +619,9 @@ img#signature{
   }
   .contact {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 100vh;
   }
 
@@ -543,9 +643,9 @@ img#signature{
   .wrapper-contact input,
   .wrapper-contact textarea,
   .wrapper-contact button {
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 5px;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    padding: .5rem;
   }
 
   .wrapper-contact input,
@@ -557,62 +657,10 @@ img#signature{
   .wrapper-icons {
     display: flex;
     flex-direction: column;
-    width: min-content;
-    justify-content: space-evenly;
-    align-items: center;
+    width: auto;
+    gap: 2rem;
   }
 }
 /* ======================================================== */
 /* ===========    End of Large Screen   =================== */
 /* ======================================================== */
-
-.music-sub {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.music-sub ul {
-  list-style: none;
-  padding: 0;
-}
-
-.wrapper-icons {
-  display: flex;
-  width: 20%;
-  justify-content: space-evenly;
-}
-
-i {
-  font-size: 2rem;
-}
-
-#fb{
-  color: blue;
-  background-color: white;
-  padding: .2rem;
-  border-radius: 10%;
-}
-#insta{
-  color: transparent;
-  background: 
-    linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-  border-radius: 10%;
-  color: white;
-  padding: .2rem;
-}
-#spot{
-  color: green;
-  background-color: black;
-  border-radius: 10%;
-  padding: .2rem;
-}
-#whats{
-  color: white;
-  background-color: green;
-  border-radius: 10%;
-  padding: .2rem;
-}
