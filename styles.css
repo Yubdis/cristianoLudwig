@@ -106,6 +106,7 @@ section {
 
 #home-intro {
   font-size: var(--fs-n);
+  text-align: center;
 }
 
 /* ==============================================================  */
@@ -419,10 +420,7 @@ section bio {
   justify-content: center;
   align-items: center;
   max-width:fit-content;
-  margin-top: 2.5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 5rem;
+  margin: 3rem;
   z-index: 2;
 }
 
@@ -437,11 +435,12 @@ img#signature{
 }
 
 .music-title {
-  margin-top: 2rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .music-about {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .music-sub {
@@ -449,6 +448,7 @@ img#signature{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 3rem;
 }
 
 .music-sub ul {
@@ -621,7 +621,7 @@ i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100vh;
   }
 
