@@ -1,4 +1,3 @@
-<script>
 const debounce = (fn) => {
     let frame;
 
@@ -20,5 +19,3 @@ const storeScroll = () => {
 storeScroll();
 
 document.addEventListener('scroll', debounce(storeScroll), { passive: true })
-
-</script>
