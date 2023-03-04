@@ -197,7 +197,7 @@ section {
     transform: skewX(-22deg);
     height: auto;
 /*     width: .8rem; */
-    aspect-ratio: 5.5; /* approximate aspect ratio of 22deg */
+    aspect-ratio: 7; /* approximate aspect ratio of 22deg */
     z-index: 11; /* place this below the actual entries */
   }
   .selected:before {
