@@ -222,8 +222,36 @@ section {
   }
 
   .nav-languages > * {
+    display: flex;
+    flex-direction: row;
+
+    margin: .2rem .1rem;
+    align-items: stretch;
+    z-index: 12;
+  }
+
+  .nav-languages > .selected > *{
+    background: var(--primary-accent-clr);
+    color: var(--primary-bg-clr);
+/*     background: var(--secondary-fg-clr); */
+/*     color: var(--primary-bg-clr); */
+    z-index: 12;
+  }
+  .nav-languages > .selected::before, .nav-languages > .selected::after {
+    background: var(--primary-accent-clr);
+    color: var(--primary-bg-clr);
+  }
+  .nav-languages > ::before, .nav-languages > ::after {
+    background: var(--secondary-bg-clr);
+    color: var(--primary-fg-clr);
     display: inline-block;
-    margin: .2rem .5rem;
+    content: " ";
+    padding: 0.1rem 0;
+    transform: skewX(-22deg);
+    height: auto;
+/*     width: .8rem; */
+    aspect-ratio: 4; /* approximate aspect ratio of 22deg */
+    z-index: 11; /* place this below the actual entries */
   }
 }
 
@@ -304,7 +332,7 @@ nav > .nav-languages > li:hover {
 
 header {
   background: var(--secondary-bg-clr);
-  color: var(--primary-bg-clr);
+  color: var(--primary-fg-clr);
   font-family: var(--ff-Bo-);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
