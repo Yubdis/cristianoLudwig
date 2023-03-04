@@ -225,7 +225,6 @@ section {
     display: flex;
     flex-direction: row;
 
-    margin: .2rem .1rem;
     align-items: stretch;
     z-index: 12;
   }
