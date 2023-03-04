@@ -470,6 +470,10 @@ img#signature{
   padding: 2rem;
 }
 
+.portrait {
+  object-fit: contain;
+}
+
 #content-box-video {
   display: flex;
   justify-content: center;
@@ -586,6 +590,10 @@ i {
   .sidebar-wrapper {
     display: none;
   }
+
+  /* .wrapper-portrait {
+
+  } */
 
   #content-box-video {
     flex-direction: column;

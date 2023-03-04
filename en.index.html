@@ -22,18 +22,22 @@
   <header>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav id="nav-bar" class="nav-bar">
-      <ul class="nav-section">
-        <li><a id="link-home" href="#en-home">Home</< /li>
-        <li><a id="link-bio" href="#en-bio">Bio</a></li>
-        <li><a id="link-music" href="#en-music">Music</a></li>
-        <li><a id="link-video" href="#en-video">Video</a></li>
-        <li><a id="link-contact" href="#en-contact">Contact</a></li>
-      </ul>
-      <ul class="nav-languages">
-        <li><a class="langs" href="en.index.html" data-reload="">EN</a></li>
-        <li><a class="langs" href="pt.index.html" data-reload="">PT</a></li>
-        <li><a class="langs" href="es.index.html" data-reload="">ES</a></li>
-    </ul>
+      <div>
+        <ul class="nav-section">
+          <li><a id="link-home" href="#en-home">Home</< /li>
+          <li><a id="link-bio" href="#en-bio">Bio</a></li>
+          <li><a id="link-music" href="#en-music">Music</a></li>
+          <li><a id="link-video" href="#en-video">Video</a></li>
+          <li><a id="link-contact" href="#en-contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="nav-languages">
+          <li><a class="langs" href="en.index.html" data-reload="">EN</a></li>
+          <li><a class="langs" href="pt.index.html" data-reload="">PT</a></li>
+          <li><a class="langs" href="es.index.html" data-reload="">ES</a></li>
+        </ul>
+      </div>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
       <span></span>
@@ -112,16 +116,8 @@
     <section class="music" id="en-music">
         <h2 class="music-title" id="music-title">Music</h2>
         <div class="wrapper-portrait">
-          <picture>
-            <img sizes="(max-width: 1380px) 100vh, 1380px" srcset="
-              images/CrisParkCrop200.avif 200w,
-              images/CrisParkCrop512.avif 512w,
-              images/CrisParkCrop879.avif 879w,
-              images/CrisParkCrop848.avif 848w,
-              images/CrisParkCrop1057.avif 1057w,
-              images/CrisParkCrop1206.avif 1206w,
-              images/CrisParkCrop1302.avif 1302w,
-              images/CrisParkCrop1380.avif 1380w" src="images/CrisParkCrop1380.jpg" alt="Cristiano Sitting">
+          <picture class="portrait">
+            <img src="images/CrisParkCropMobile.jpg" alt="Cristiano Sitting">
             </picture>
         </div>
 
