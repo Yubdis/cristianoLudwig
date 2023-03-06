@@ -273,45 +273,6 @@ nav a {
   color: inherit;
 }
 
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 1.5rem;
-  left: 0;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: var(--primary-accent-clr);
-  height: 3px;
-  width: 2rem;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 8px;
-}
-
-.nav-toggle-label span::after {
-  top: 8px;
-}
-
 
 .nav-section {
   font-size: 1.8rem;
@@ -331,9 +292,6 @@ nav > .nav-languages > li:hover {
   color: var(--primary-bg-clr);
 }
 
-.nav-toggle:checked~nav {
-  transform: scale(1, 1);
-}
 /*  ============================================
             navbar for larger screens
     ============================================*/
@@ -386,10 +344,6 @@ nav > .nav-languages > li:hover {
     position: relative;
     padding-right: .1rem;
     margin-right: .3rem;
-  }
-
-  .nav-toggle-label {
-    display: none;
   }
 
   .nav-section {
