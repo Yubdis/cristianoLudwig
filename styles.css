@@ -278,8 +278,7 @@ nav a {
   font-size: 1.8rem;
 }
 
-
-nav .nav-section a {
+.nav-section a {
   color: var(--primary-bg-clr);
 }
 
@@ -287,7 +286,7 @@ nav a:hover {
   color: var(--primary-bg-clr);
 }
 
-nav > .nav-languages > li:hover {
+.nav-languages > li:hover {
   background-color: var(--primary-accent-clr);
   color: var(--primary-bg-clr);
 }
