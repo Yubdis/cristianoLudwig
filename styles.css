@@ -341,70 +341,24 @@ header {
             navbar for larger screens
     ============================================*/
 @media screen and (min-width: 735px) {
-
-  nav {
-
-    position: absolute;
-    background-color: var(--secondary-bg-clr);
-    text-align: left;
-    width: 30%;
-    left: 0;
-    transform: scale(0, 1);
-    transform-origin: left;
-  /*   transition: transform 400ms ease-in-out; */
-    opacity: .8;
-  }
-
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-top: 5rem;
-  }
-
-  nav li {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-  }
-
-
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
-  }
-  header {
-    display: flex;
-    background: var(--secondary-bg-clr);
-    color: var(--primary-bg-clr);
-    font-family: var(--ff-Bo-);
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-
-  .nav-section {
-    font-size: 2rem;
   }
 
   header {
     display: grid;
     grid-template-columns: auto auto;
+    background: var(--secondary-bg-clr);
+    color: var(--primary-bg-clr);
+    font-family: var(--ff-Bo-);
+    position: fixed;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     top: 2rem;
     margin-top: 0;
-    padding: .5rem;
-  }
-
-  header a {
-    width: 1rem;
   }
 
   nav {
@@ -417,6 +371,19 @@ header {
     padding: .3rem;
   }
 
+  nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav li {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+  }
+
   nav a {
     opacity: 1;
     position: relative;
@@ -424,16 +391,15 @@ header {
     margin-right: .3rem;
   }
 
-  a .banner {
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 0;
+  .nav-toggle-label {
+    display: none;
   }
 
-  nav > .nav-section a::before {
+  .nav-section {
+    font-size: 2rem;
+  }
+
+  .nav-section a::before {
     content: '';
     display: block;
     height: 3px;
@@ -444,23 +410,14 @@ header {
     right: 0;
     transform: scale(0, 1);
     transform-origin: center;
-/*     transition: transform ease-in-out 250ms; */
+    transition: transform ease-in-out 250ms;
   }
 
-  nav  >.nav-section a:hover::before {
+  .nav-section a:hover::before {
     transform: scale(1, 1);
   }
 
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
 
-  nav li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
-  }
 }
 /*  =========================================================== */
     /* ================ end of navbar ====================== */
