@@ -561,7 +561,7 @@ section.contact {
   justify-content: space-evenly;
 }
 
-i {
+.wrapper-icons i {
   font-size: 2rem;
 }
 
