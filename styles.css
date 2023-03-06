@@ -273,16 +273,15 @@ nav a {
   color: inherit;
 }
 
+nav a:hover {
+  color: var(--primary-bg-clr);
+}
 
 .nav-section {
   font-size: 1.8rem;
 }
 
 .nav-section a {
-  color: var(--primary-bg-clr);
-}
-
-nav a:hover {
   color: var(--primary-bg-clr);
 }
 
