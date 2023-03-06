@@ -261,6 +261,13 @@ section.home{
 /* ================================================ */
           /* ========== Nav Bar ========== */
 /* ================================================ */
+header {
+  background: var(--secondary-bg-clr);
+  color: var(--primary-fg-clr);
+  font-family: var(--ff-Bo-);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 nav a {
   text-decoration: none;
   color: inherit;
@@ -327,15 +334,6 @@ nav > .nav-languages > li:hover {
 .nav-toggle:checked~nav {
   transform: scale(1, 1);
 }
-
-header {
-  background: var(--secondary-bg-clr);
-  color: var(--primary-fg-clr);
-  font-family: var(--ff-Bo-);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-
 /*  ============================================
             navbar for larger screens
     ============================================*/
