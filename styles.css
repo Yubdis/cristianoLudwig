@@ -34,7 +34,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-margin-top: 2rem;
 }
 
@@ -93,7 +92,7 @@ section {
   font-family: var(--ff-Mo-);
 }
 
-#home{
+section.home{
   position: relative;
 }
 
@@ -340,6 +339,26 @@ header {
     ============================================*/
 @media screen and (min-width: 735px) {
 
+  html {
+    scroll-padding-top: 3.5rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: var(--secondary-bg-clr);
+    color: var(--primary-bg-clr);
+    font-family: var(--ff-Bo-);
+    position: fixed;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    top: 2rem;
+    margin-top: 0;
+  }
+
   nav {
 
     position: absolute;
@@ -366,23 +385,11 @@ header {
     margin-left: 1em;
   }
 
-
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 3.5rem;
-  }
-  header {
-    display: flex;
-    background: var(--secondary-bg-clr);
-    color: var(--primary-bg-clr);
-    font-family: var(--ff-Bo-);
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  nav a {
+    opacity: 1;
+    position: relative;
+    padding-right: .1rem;
+    margin-right: .3rem;
   }
 
   .nav-toggle-label {
@@ -393,45 +400,7 @@ header {
     font-size: 2rem;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: auto auto;
-    top: 2rem;
-    margin-top: 0;
-    padding: .5rem;
-  }
-
-  header a {
-    width: 1rem;
-  }
-
-  nav {
-    all: unset;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: .3rem;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-    padding-right: .1rem;
-    margin-right: .3rem;
-  }
-
-  a .banner {
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 0;
-  }
-
-  nav > .nav-section a::before {
+  .nav-section a::before {
     content: '';
     display: block;
     height: 3px;
@@ -442,23 +411,16 @@ header {
     right: 0;
     transform: scale(0, 1);
     transform-origin: center;
-    /* transition: transform ease-in-out 250ms; */
+
+    transition: transform ease-in-out 250ms;
+
   }
 
-  nav  >.nav-section a:hover::before {
+  .nav-section a:hover::before {
     transform: scale(1, 1);
   }
 
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
 
-  nav li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
-  }
 }
 /*  =========================================================== */
     /* ================ end of navbar ====================== */
@@ -479,21 +441,22 @@ header {
   text-align: center;
 }
 
-#en-home {
+section.home {
   background-image: url(images/CrisBoardwalkMobile.jpg);
   background-size: cover;
 }
 
-section bio {
+section.bio {
   flex-direction: column;
 }
 
-#content-box {
+.wrapper-bio {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width:fit-content;
   margin: 3rem;
+  padding: 3rem;
   z-index: 2;
 }
 
@@ -501,7 +464,7 @@ img#signature{
   width: clamp(7em, 30vw, 50vw);
 }
 
-.music {
+section.music {
   background-color: var(--primary-bg-clr);
   display: flex;
   flex-direction: column;
@@ -547,7 +510,7 @@ img#signature{
   object-fit: contain;
 }
 
-#content-box-video {
+.wrapper-video {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -559,7 +522,7 @@ img#signature{
   z-index: 2;
 }
 
-.contact {
+section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,7 +565,7 @@ img#signature{
   justify-content: space-evenly;
 }
 
-i {
+.wrapper-icons i {
   font-size: 2rem;
 }
 
@@ -660,7 +623,7 @@ i {
     background-color: var(--primary-accent-clr)
   }
 
-  #en-home {
+  section.home {
     background-image: url(images/CrisBoardwalk2400.jpg);
     background-size: cover;
   }
@@ -669,7 +632,7 @@ i {
 
   } */
 
-  #content-box-video {
+  .wrapper-video {
     flex-direction: column;
   }
 
@@ -699,7 +662,7 @@ i {
   #video3{
     grid-area: video3;
   }
-  .contact {
+  section.contact {
     display: flex;
     flex-direction: row;
     align-items: center;
