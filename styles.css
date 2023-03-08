@@ -215,9 +215,9 @@ section.home{
   .nav-languages {
     display: flex;
     flex-direction: row;
-
     justify-content: flex-end;
     margin: 0;
+    font-size: 1.2rem;
   }
 
   .nav-languages > * {
@@ -231,8 +231,6 @@ section.home{
   .nav-languages > .selected > *{
     background: var(--primary-accent-clr);
     color: var(--primary-bg-clr);
-/*     background: var(--secondary-fg-clr); */
-/*     color: var(--primary-bg-clr); */
     z-index: 12;
   }
   .nav-languages > .selected::before, .nav-languages > .selected::after {
@@ -340,6 +338,7 @@ header {
             navbar for larger screens
     ============================================*/
 @media screen and (min-width: 735px) {
+
   html {
     scroll-padding-top: 3.5rem;
   }
@@ -361,26 +360,29 @@ header {
   }
 
   nav {
-    all: unset;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: .3rem;
+
+    position: absolute;
+    background-color: var(--secondary-bg-clr);
+    text-align: left;
+    width: 30%;
+    left: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    /* transition: transform 400ms ease-in-out; */
+    opacity: .8;
   }
 
   nav ul {
-    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-top: 5rem;
   }
 
   nav li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
   }
 
   nav a {
@@ -409,7 +411,9 @@ header {
     right: 0;
     transform: scale(0, 1);
     transform-origin: center;
+
     transition: transform ease-in-out 250ms;
+
   }
 
   .nav-section a:hover::before {
@@ -595,6 +599,11 @@ section.contact {
   background-color: green;
   border-radius: 10%;
   padding: .2rem;
+}
+
+.youtube {
+  max-width: 3em;
+  background-color: red;
 }
 
 /* ================================================================ */
