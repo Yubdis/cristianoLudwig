@@ -34,7 +34,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-margin-top: 2rem;
 }
 
@@ -93,7 +92,7 @@ section {
   font-family: var(--ff-Mo-);
 }
 
-#home{
+section.home{
   position: relative;
 }
 
@@ -262,73 +261,6 @@ section {
 /* ================================================ */
           /* ========== Nav Bar ========== */
 /* ================================================ */
-nav a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 1.5rem;
-  left: 0;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: var(--primary-accent-clr);
-  height: 3px;
-  width: 2rem;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 8px;
-}
-
-.nav-toggle-label span::after {
-  top: 8px;
-}
-
-
-.nav-section {
-  font-size: 1.8rem;
-}
-
-
-nav .nav-section a {
-  color: var(--primary-bg-clr);
-}
-
-nav a:hover {
-  color: var(--primary-bg-clr);
-}
-
-nav > .nav-languages > li:hover {
-  background-color: var(--primary-accent-clr);
-  color: var(--primary-bg-clr);
-}
-
-.nav-toggle:checked~nav {
-  transform: scale(1, 1);
-}
-
 header {
   background: var(--secondary-bg-clr);
   color: var(--primary-fg-clr);
@@ -336,75 +268,49 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: var(--primary-bg-clr);
+}
+
+.nav-section {
+  font-size: 1.8rem;
+}
+
+.nav-section a {
+  color: var(--primary-bg-clr);
+}
+
+.nav-languages > li:hover {
+  background-color: var(--primary-accent-clr);
+}
 
 /*  ============================================
             navbar for larger screens
     ============================================*/
 @media screen and (min-width: 735px) {
-
-  nav {
-
-    position: absolute;
-    background-color: var(--secondary-bg-clr);
-    text-align: left;
-    width: 30%;
-    left: 0;
-    transform: scale(0, 1);
-    transform-origin: left;
-  /*   transition: transform 400ms ease-in-out; */
-    opacity: .8;
-  }
-
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-top: 5rem;
-  }
-
-  nav li {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-  }
-
-
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
-  }
-  header {
-    display: flex;
-    background: var(--secondary-bg-clr);
-    color: var(--primary-bg-clr);
-    font-family: var(--ff-Bo-);
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-
-  .nav-section {
-    font-size: 2rem;
   }
 
   header {
     display: grid;
     grid-template-columns: auto auto;
+    background: var(--secondary-bg-clr);
+    color: var(--primary-bg-clr);
+    font-family: var(--ff-Bo-);
+    position: fixed;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     top: 2rem;
     margin-top: 0;
-    padding: .5rem;
-  }
-
-  header a {
-    width: 1rem;
   }
 
   nav {
@@ -417,6 +323,19 @@ header {
     padding: .3rem;
   }
 
+  nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav li {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+  }
+
   nav a {
     opacity: 1;
     position: relative;
@@ -424,16 +343,11 @@ header {
     margin-right: .3rem;
   }
 
-  a .banner {
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 0;
+  .nav-section {
+    font-size: 2rem;
   }
 
-  nav > .nav-section a::before {
+  .nav-section a::before {
     content: '';
     display: block;
     height: 3px;
@@ -444,23 +358,14 @@ header {
     right: 0;
     transform: scale(0, 1);
     transform-origin: center;
-/*     transition: transform ease-in-out 250ms; */
+    transition: transform ease-in-out 250ms;
   }
 
-  nav  >.nav-section a:hover::before {
+  .nav-section a:hover::before {
     transform: scale(1, 1);
   }
 
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
 
-  nav li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
-  }
 }
 /*  =========================================================== */
     /* ================ end of navbar ====================== */
@@ -481,21 +386,22 @@ header {
   text-align: center;
 }
 
-#en-home {
+section.home {
   background-image: url(images/CrisBoardwalkMobile.jpg);
   background-size: cover;
 }
 
-section bio {
+section.bio {
   flex-direction: column;
 }
 
-#content-box {
+.wrapper-bio {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width:fit-content;
   margin: 3rem;
+  padding: 3rem;
   z-index: 2;
 }
 
@@ -503,7 +409,7 @@ img#signature{
   width: clamp(7em, 30vw, 50vw);
 }
 
-.music {
+section.music {
   background-color: var(--primary-bg-clr);
   display: flex;
   flex-direction: column;
@@ -549,7 +455,7 @@ img#signature{
   object-fit: contain;
 }
 
-#content-box-video {
+.wrapper-video {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,7 +467,7 @@ img#signature{
   z-index: 2;
 }
 
-.contact {
+section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -604,7 +510,7 @@ img#signature{
   justify-content: space-evenly;
 }
 
-i {
+.wrapper-icons i {
   font-size: 2rem;
 }
 
@@ -657,7 +563,7 @@ i {
     background-color: var(--primary-accent-clr)
   }
 
-  #en-home {
+  section.home {
     background-image: url(images/CrisBoardwalk2400.jpg);
     background-size: cover;
   }
@@ -666,7 +572,7 @@ i {
 
   } */
 
-  #content-box-video {
+  .wrapper-video {
     flex-direction: column;
   }
 
@@ -696,7 +602,7 @@ i {
   #video3{
     grid-area: video3;
   }
-  .contact {
+  section.contact {
     display: flex;
     flex-direction: row;
     align-items: center;
