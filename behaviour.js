@@ -19,3 +19,9 @@ const storeScroll = () => {
 storeScroll();
 
 document.addEventListener('scroll', debounce(storeScroll), { passive: true })
+
+const navBarClick = function(e) {
+    document.getElementById('nav-bar').classList.toggle('active');
+}
+
+document.getElementById('nav-bar').addEventListener('click', navBarClick)
