@@ -88,6 +88,7 @@ section {
 
 .nav-languages {
   font-family: var(--ff-Mo-);
+  color: var(--primary-accent-clr);
 }
 
 section.home{
@@ -213,7 +214,6 @@ section.home{
   .nav-languages {
     display: flex;
     flex-direction: row;
-
     justify-content: flex-end;
     margin: 0;
   }
@@ -221,7 +221,6 @@ section.home{
   .nav-languages > * {
     display: flex;
     flex-direction: row;
-
     align-items: stretch;
     z-index: 12;
   }
@@ -434,6 +433,7 @@ section.music {
 .music-sub ul {
   list-style: none;
   padding: 0;
+  font-size: 2rem;
 }
 
 .music-notes {
@@ -452,6 +452,9 @@ section.music {
 
 .portrait {
   object-fit: contain;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
 }
 
 .wrapper-video {
@@ -565,11 +568,8 @@ section.contact {
   section.home {
     background-image: url(images/CrisBoardwalk2400.jpg);
     background-size: cover;
+    background-position: center;
   }
-
-  /* .wrapper-portrait {
-
-  } */
 
   .wrapper-video {
     flex-direction: column;
