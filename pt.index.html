@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
   <title>Cristiano Ludwig</title>
   <meta charset="UTF-8">
@@ -16,89 +15,86 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/88af2464b2.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <header>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav id="nav-bar" class="nav-bar">
-      <ul class="nav-section">
-        <li><a id="link-home" href="#pt-home">Casa</< /li>
-        <li><a id="link-bio" href="#pt-bio">Biografia</a></li>
-        <li><a id="link-music" href="#pt-music">Música</a></li>
-        <li><a id="link-video" href="#pt-video">Vídeo</a></li>
-        <li><a id="link-contact" href="#pt-contact">Contato</a></li>
-      </ul>
-      <ul>
-        <li><a href="en.index.html" data-reload="">EN</a></li>
-        <li><a href="pt.index.html" data-reload="">PT</a></li>
-        <li><a href="es.index.html" data-reload="">ES</a></li
-      </ul>
+    <nav class="nav-bar">
+      <div id="nav-bar" class="nav-section-wrapper">
+        <ul class="nav-section">
+          <li><a id="link-home" href="#pt-home">Casa</a></li>
+          <li><a id="link-bio" href="#pt-bio">Biografia</a></li>
+          <li><a id="link-music" href="#pt-music">Música</a></li>
+          <li><a id="link-video" href="#pt-video">Vídeo</a></li>
+          <li><a id="link-contact" href="#pt-contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="nav-languages-wrapper">
+        <ul class="nav-languages">
+          <li><a class="langs" href="en.index.html" data-reload="">EN</a></li>
+          <li class="selected"><a class="langs" href="pt.index.html" data-reload="">PT</a></li>
+          <li><a class="langs" href="es.index.html" data-reload="">ES</a></li>
+        </ul>
+      </div>
     </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
   </header>
 
   <main>
-    <section class="text-center odds" id="pt-home">
-      <img src="images/CrisBoardwalk1380.avif" Alt="Cristiano playing Sax">
-      <div class="home-content">
-        <h1>Cristiano Ludwig</h1>
-        <p id="home-intro">Músico, Compositor, Professor</p>
+    <section class="odds home" id="pt-home">
+      <div class="wrapper-bg-pic">
+        <div class="home-content">
+          <h1>Cristiano Ludwig</h1>
+          <p id="home-intro">Músico, Compositor, Professor</p>
+        </div>
       </div>
-
     </section>
 
-    <section class="evens" id="pt-bio">
-      <div class="row">
-        <span id="bio-bg-header"></span>
-      </div>
-      <div class="row" id="content-box">
-        <h2 class="text-center" id="bio-title">Sobre o Artista</h2>
+    <section class="evens bio" id="pt-bio">
+      <div class="row wrapper-bio">
+        <h2 class="text-center" id="bio-title">Bio</h2>
         <div class="col text-center">
-          <p id="bio-text">Cristiano começou a tocar saxofone aos 13 anos. Possui
-          bacharelado em música (saxofone) pela Universidade Federal do
-          Rio Grande do Sul (UFRGS) e Mestrado em jazz performance pela
-          NJCU (New Jersey City University), em Jersey City, EUA, onde
-          estudou com os renomados saxofonistas, Bob Malach e Walt
-          Weiskopf. Durante esse período, apresentou-se ao lado de artistas
-          importantes na cena de jazz de Nova York como Alan Ferber,
-          Catherine Russell, Alex Norris e Chris Byars e também em
-          diversos bares, casas de jazz e rádios da região metropolitana e
-          cidade de Nova York, como WBGO, Club Bonafide (que pertence
-          ao baixista Richard Bona), Zinc Bar, entre outros. Em 2016 foi
-          premiado pela New Jersey Jazz Society com a Don Robertson
-          Scholarship, em reconhecimento ao excelente desempenho no
-          estudo do jazz.</p>
-          <p>
-          De volta ao Brasil, apresenta-se regularmente nas casas de jazz
-          de Porto Alegre com seu trabalho autoral ou acompanhando
-          artistas da cena instrumental da cidade. Também se apresenta
-          com as principais orquestras do estado como OSPA (Orquestra
-          Sinfônica de Porto Alegre), Orquestra Municipal de Sopros de
-          Caxias do Sul, Orquestra de Sopros de Novo Hamburgo, Salvagni
-          Big Band & Ney Lisboa e Orquestra Sinfônica de Gramado. Esteve
-          em sua primeira turnê pela Europa em janeiro de 2020 e lançou
-          seu primeiro álbum como band leader intitulado Cristiano Ludwig
-          Quarteto – Olhar para o Amanha – em 2021.</p>
+          <p class="bio-text" id="bio-text">Cristiano começou a tocar saxofone aos 13 anos. Possui
+            bacharelado em música (saxofone) pela Universidade Federal do
+            Rio Grande do Sul (UFRGS) e Mestrado em jazz performance pela
+            NJCU (New Jersey City University), em Jersey City, EUA, onde
+            estudou com os renomados saxofonistas, Bob Malach e Walt
+            Weiskopf. Durante esse período, apresentou-se ao lado de artistas
+            importantes na cena de jazz de Nova York como Alan Ferber,
+            Catherine Russell, Alex Norris e Chris Byars e também em
+            diversos bares, casas de jazz e rádios da região metropolitana e
+            cidade de Nova York, como WBGO, Club Bonafide (que pertence
+            ao baixista Richard Bona), Zinc Bar, entre outros. Em 2016 foi
+            premiado pela New Jersey Jazz Society com a Don Robertson
+            Scholarship, em reconhecimento ao excelente desempenho no
+            estudo do jazz.</p>
+          <p class="bio-text">
+            De volta ao Brasil, apresenta-se regularmente nas casas de jazz
+            de Porto Alegre com seu trabalho autoral ou acompanhando
+            artistas da cena instrumental da cidade. Também se apresenta
+            com as principais orquestras do estado como OSPA (Orquestra
+            Sinfônica de Porto Alegre), Orquestra Municipal de Sopros de
+            Caxias do Sul, Orquestra de Sopros de Novo Hamburgo, Salvagni
+            Big Band & Ney Lisboa e Orquestra Sinfônica de Gramado. Esteve
+            em sua primeira turnê pela Europa em janeiro de 2020 e lançou
+            seu primeiro álbum como band leader intitulado Cristiano Ludwig
+            Quarteto – Olhar para o Amanha – em 2021.</p>
           <img src="images/crisSignature.png" alt="Cristiano's Signature" id="signature">
         </div>
       </div>
-      
-    </section>
-    <section id="pt-music">
-      <div class="row p-5">
-        <h2 class="text-center" id="music-title">Música</h2>
-        <div class="row" id="about-pic">
-          <img src="images/CrisParkCrop1380.avif" alt="Cristiano">
-        </div>
 
-        <div class="row text-center">
-          <p id="music-text">Cristiano Ludwig Quarteto nasceu inspirado na paixão pelo jazz e
+    </section>
+
+    <section class="music" id="pt-music">
+      <h2 class="music-title" id="music-title">Música</h2>
+      <div class="wrapper-portrait">
+        <picture>
+          <img class="portrait" src="images/CrisParkCropSitting.jpg" alt="Cristiano Sitting">
+        </picture>
+      </div>
+
+      <div class="music-about">
+        <p class="music-text" id="music-text">Cristiano Ludwig Quarteto nasceu inspirado na paixão pelo jazz e
           na profunda experiência que Cristiano obteve em Nova Iorque ao
           vivenciar de perto toda a força e as nuances que esse estilo é
           capaz de proporcionar. Além de Cristiano no sax tenor, o grupo
@@ -112,45 +108,47 @@
           fraseado jazzístico e composições inspiradas nos grandes nomes
           do jazz como Sonny Rollins, John Coltrane, Joe Henderson,
           McCoy Tyner e outros.</p>
-          <p>
+        <p class="music-text">
           O grupo gravou seu primeiro álbum em 2021 durante uma das
           fases críticas da pandemia, e o título, Olhar para o Amanhã,
           refere-se à esperança por dias melhores que alimentou a criação
           do trabalho.</p>
-          <p>
+        <p class="music-text">
           O disco também conta com as participações especiais de Walt
           Weiskopf, renomado saxofonista e educador norte americano e
           também um dos mentores de Cristiano. Marcelo Martins, uma das
           maiores referencias e influencias do saxofone brasileiro, e
           também do percussionista Bruno Coelho, talentoso e renomado
           musico da cena instrumental do RS.
-
-          </p>
-        </div>
-        <div class="row text-center">
-          <h3 id="music-subhead">Pode ouvir no spotify aqui</h3>
-          <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg" target="_blank"
-            class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
-        </div>
-        <img src="images/musicWriting.png" alt="Written Music">
+        </p>
       </div>
 
+      <div class="music-sub">
+        <h3 id="music-subhead" class="music-title">You can listen and purchase my music on spotify here</h3>
+        <ul>
+          <li>
+            <a href="https://open.spotify.com/album/6vOoXIPZNwD56sEgTOO12G?si=xGbFSLdISzmXFin1KIV0Fg" target="_blank"
+              class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+          </li>
+        </ul>
+      </div>
+      <img class="music-notes" src="images/musicWriting.png" alt="Written Music">
     </section>
-    <section class="odds" id="pt-video">
-      <div class="row" id="content-box-video">
-        <h2 class="text-center" id="video-title">Assitir video's no Youtube</h1>
-          <a href="https://www.youtube.com/@cristianoludwig5290" target="_blank"
-            class="text-center">www.youtube.com/@cristianoludwig5290</a>
+
+    <section class="evens video" id="pt-video">
+      <div class="row wrapper-video">
+        <h2 class="text-center" id="video-title">Assitir video's no Youtube</h2>
+          <a href="https://www.youtube.com/@cristianoludwig5290" target="_blank"class="text-center">www.youtube.com/@cristianoludwig5290</a>
           <div class="container" id="videos">
-            <iframe id="video1" width="100%" height="auto" src="https://www.youtube.com/embed/xquDUITPVXk"
+            <iframe id="video1" width="100%" height="100%" src="https://www.youtube.com/embed/xquDUITPVXk"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
-            <iframe id="video2" width="100%" height="auto" src="https://www.youtube.com/embed/heNU1jvA6wQ"
+            <iframe id="video2" width="100%" height="100%" src="https://www.youtube.com/embed/heNU1jvA6wQ"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
-            <iframe id="video3" width="100%" height="auto" src="https://www.youtube.com/embed/CuKB76F0t9I"
+            <iframe id="video3" width="100%" height="100%" src="https://www.youtube.com/embed/CuKB76F0t9I"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
@@ -158,36 +156,33 @@
       </div>
     </section>
 
-    <section class="evens" id="pt-contact">
-      <div class="container">
-        <div class="row" id="content-box-form">
-          <h2 class="text-center m-3" id="form-title">Contato</h2>
-          <div class="col-4">
-            <label for="name" id="form-person">Nome</label>
-            <input type="text" class="form-control" aria-label="name">
-          </div>
-          <div class="col-4">
-            <label for="email" id="form-email">Email</label>
-            <input type="text" class="form-control" aria-label="email">
-          </div>
-          <div class="col-4">
-            <label for="phone" id="form-phone">Celular</label>
-            <input type="text" class="form-control" aria-label="phone">
-          </div>
-          <div class="row mt-1">
-            <label class="mt-1" id="form-message">Mensagem</label>
-            <textarea name="" id="" cols="10" rows="3"></textarea>
-          </div>
-          <div class="row">
-            <div class="col m-2">
-              <button class="text-bg-dark px-5" id="form-button">Enviar</button>
-            </div>
-          </div>
-        </div>
+    <section class="odds contact" id="pt-contact">
+      <div class="wrapper-contact">
+        <h2 class="contact-input">Contato</h2>
+        <form>
+          <label for="name">Nome</label>
+          <input type="text" id="name" aria-label="name">
+          <label for="email">Email</label>
+          <input type="text" id="email" aria-label="email">
+          <label for="phone">Celular</label>
+          <input type="text" id="phone" aria-label="phone">
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" cols="20" rows="3"></textarea>
+          <button class="text-bg-dark px-5" id="form-button">Enviar</button>
+        </form>
       </div>
+      <div class="wrapper-icons">
+        <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
+        <a href=""><i id="insta" class="fa-brands fa-instagram"></i></a>
+        <a href=""><i id="spot" class="fa-brands fa-spotify"></i></a>
+        <a href=""><i id="whats" class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      </div>
+
     </section>
-  </main>
-  <footer>
+    </main>
+
+  <!-- <footer>
     <div class="footer">
       <div class="icons">
         <a href=""><i id="fb" class="fa-brands fa-facebook"></i></a>
@@ -203,8 +198,7 @@
       </div>
 
     </div>
-  </footer>
-  <script type="text/javascript" src="languages.js"></script>
+  </footer> -->
   <script type="text/javascript" src="behaviour.js"></script>
 </body>
 
