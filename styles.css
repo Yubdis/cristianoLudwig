@@ -342,7 +342,7 @@ nav a:hover {
   .nav-languages>li:hover {
     transform: skewX(-15deg);
   }
-  
+
   a.langs:hover {
     transform: skewX(15deg);
   }
@@ -397,13 +397,13 @@ section.home {
 
 section.bio {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .wrapper-bio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width:fit-content;
+  width: 80%;
   margin: 3rem;
   padding: 3rem;
   z-index: 2;
@@ -417,6 +417,7 @@ section.music {
   background-color: var(--primary-bg-clr);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .music-title {
@@ -425,6 +426,7 @@ section.music {
 }
 
 .music-about {
+  width: 80%;
   padding: 3rem;
 }
 
