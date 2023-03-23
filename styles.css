@@ -228,8 +228,6 @@ section.home{
   .nav-languages > .selected > *{
     background: var(--primary-accent-clr);
     color: var(--primary-bg-clr);
-/*     background: var(--secondary-fg-clr); */
-/*     color: var(--primary-bg-clr); */
     z-index: 12;
   }
   .nav-languages > .selected::before, .nav-languages > .selected::after {
@@ -344,7 +342,7 @@ nav a:hover {
   .nav-languages>li:hover {
     transform: skewX(-15deg);
   }
-
+  
   a.langs:hover {
     transform: skewX(15deg);
   }
@@ -673,7 +671,7 @@ a>i:hover {
     flex-direction: column;
     align-items: center;
     width: auto;
-    gap: 2rem;
+    gap: 1.3rem;
   }
 }
 /* ======================================================== */
