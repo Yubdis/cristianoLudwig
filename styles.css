@@ -176,19 +176,25 @@ section.home{
     align-items: stretch;
   }
 
-  .nav-section > * > * {
+  .nav-languages > * > *, .nav-section > * > * {
     flex: 1;
     padding: 0.1rem 0;
     z-index: 12;
   }
 
-  .selected > * {
+  .selected > *, nav li:hover > * {
     background: var(--primary-accent-clr);
   }
-  .selected::before, .selected::after {
+  .selected::before, .selected::after, nav li:hover::before, nav li:hover::after {
     background: var(--primary-accent-clr);
   }
-  .nav-section > *::before, .nav-section > *::after {
+  .selected > *, .nav-languages>li:hover > * {
+    color: var(--primary-bg-clr);
+  }
+  .selected::before, .selected::after, .nav-languages>li:hover::before, .nav-languages>li:hover::after {
+    color: var(--primary-bg-clr);
+  }
+  .nav-section > *::before, .nav-section > *::after, .nav-languages > *::before, .nav-languages > *::after {
     display: inline-block;
     content: " ";
     padding: 0.1rem 0;
@@ -198,10 +204,10 @@ section.home{
     aspect-ratio: 7; /* approximate aspect ratio of 22deg */
     z-index: 11; /* place this below the actual entries */
   }
-  .selected:before {
+  nav li:hover::before, .selected::before {
     transform-origin: bottom right;
   }
-  .selected::after {
+  nav li:hover::after, .selected::after {
     transform-origin: top left;
   }
 
@@ -225,7 +231,7 @@ section.home{
     z-index: 12;
   }
 
-  .nav-languages > .selected > *{
+  .nav-languages > .selected > * {
     background: var(--primary-accent-clr);
     color: var(--primary-bg-clr);
     z-index: 12;
@@ -240,9 +246,7 @@ section.home{
     display: inline-block;
     content: " ";
     padding: 0.1rem 0;
-    transform: skewX(-22deg);
     height: auto;
-/*     width: .8rem; */
     aspect-ratio: 4; /* approximate aspect ratio of 22deg */
     z-index: 11; /* place this below the actual entries */
   }
@@ -281,9 +285,9 @@ nav a:hover {
   color: var(--primary-bg-clr);
 }
 
-.nav-languages > li:hover {
-  background-color: var(--primary-accent-clr);
-}
+/* .nav-languages > li:hover { */
+/*   background-color: var(--primary-accent-clr); */
+/* } */
 
 /*  ============================================
             navbar for larger screens
@@ -332,19 +336,11 @@ nav a:hover {
     margin-left: .5rem;
   }
 
-  nav a {
+  .nav-section a {
     opacity: 1;
     position: relative;
     padding-right: .1rem;
     margin-right: .3rem;
-  }
-
-  .nav-languages>li:hover {
-    transform: skewX(-15deg);
-  }
-
-  a.langs:hover {
-    transform: skewX(15deg);
   }
 
   .nav-section {
@@ -675,6 +671,75 @@ a>i:hover {
     align-items: center;
     width: auto;
     gap: 1.3rem;
+  }
+
+
+  .selected > *, .nav-languages li:hover > * {
+    background: var(--primary-accent-clr);
+  }
+  .selected::before, .selected::after, .nav-languages li:hover::before, .nav-languages li:hover::after {
+    background: var(--primary-accent-clr);
+  }
+  .selected > *, .nav-languages>li:hover > * {
+    color: var(--primary-bg-clr);
+  }
+  .selected::before, .selected::after, .nav-languages>li:hover::before, .nav-languages>li:hover::after {
+    color: var(--primary-bg-clr);
+  }
+  .nav-section > *::before, .nav-section > *::after, .nav-languages > *::before, .nav-languages > *::after {
+    display: inline-block;
+    content: " ";
+    padding: 0.1rem 0;
+    transform: skewX(-22deg);
+    height: auto;
+    aspect-ratio: 7; /* approximate aspect ratio of 22deg */
+    z-index: 11; /* place this below the actual entries */
+  }
+  .nav-languages li:hover::before, .selected::before {
+    transform-origin: bottom right;
+  }
+  .nav-languages li:hover::after, .selected::after {
+    transform-origin: top left;
+  }
+
+  .nav-languages-wrapper {
+    position: sticky;
+    background: var(--secondary-bg-clr);
+    color: var(--primary-fg-clr);
+  }
+
+  .nav-languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .nav-languages > * {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    z-index: 12;
+  }
+
+  .nav-languages > .selected > *, .nav-languages > :hover > * {
+    background: var(--primary-accent-clr);
+    color: var(--primary-bg-clr);
+    z-index: 12;
+  }
+  .nav-languages > .selected::before, .nav-languages > .selected::after {
+    background: var(--primary-accent-clr);
+    color: var(--primary-bg-clr);
+  }
+  .nav-languages > *::before, .nav-languages > *::after {
+    background: var(--secondary-bg-clr);
+    color: var(--primary-fg-clr);
+    display: inline-block;
+    content: " ";
+    padding: 0.1rem 0;
+    height: auto;
+    aspect-ratio: 5; /* approximate aspect ratio of 22deg */
+    z-index: 11; /* place this below the actual entries */
   }
 }
 /* ======================================================== */
