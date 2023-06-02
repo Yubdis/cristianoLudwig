@@ -537,6 +537,7 @@ a>i:hover {
 .icon-items{
   display: flex;
   font-size: 3em;
+  margin: 2rem;
 }
 
 #fb{
