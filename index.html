@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Website do Saxophonist Cristiano Ludwig.">
-  <!-- TODO change href links to actual website -->
+  <meta name="description" content="Website do Saxophonist Cristiano Ludwig.">
   <link rel="alternate" hreflang="en" href="https://www.cristianoludwig.com/en.index.html" />
   <link rel="alternate" hreflang="es" href="https://www.cristianoludwig.com/es.index.html" />
   <link rel="canonical" hreflang="pt" href="https://www.cristianoludwig.com/index.html" />
@@ -19,6 +17,52 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/88af2464b2.js" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Cristiano Ludwig",
+        "jobTitle": "Professional Saxophone Player",
+        "image": "https://www.cristianoludwig.com/images/cristiano.webp",
+        "url": "https://www.cristianoludwig.com",
+        "sameAs": [
+          "https://www.instagram.com/cristiano.ludwig.1/",
+          "https://www.facebook.com/cristiano.ludwig.1",
+          "https://www.youtube.com/@cristianoludwig5290"
+        ],
+        "description": "Cristiano Ludwig é um saxofonista profissional baseado em Porto Alegre, Brasil, que oferece aulas de música, apresentações solo e em grupo para eventos, concertos e eventos particulares.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Porto Alegre",
+          "addressRegion": "RS",
+          "addressCountry": "Brazil"
+        },
+        "email": "mailto:cristiano@gmail.com",
+        "telephone": "+55-51-9946-1042",
+        "knowsAbout": ["Jazz", "Bossa Nova", "Funk", "Soul", "Improvisação", "Aulas de música", "Apresentações ao vivo"],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Aulas de saxofone",
+            "description": "Aulas particulares ou em grupo de saxofone para iniciantes e avançados.",
+            "areaServed": "Porto Alegre, regiões próximas e on-line"
+          },
+          {
+            "@type": "Offer",
+            "name": "Apresentações de saxofone solo",
+            "description": "Apresentações de saxofone solo ao vivo para casamentos, festas particulares e eventos corporativos.",
+            "areaServed": "Porto Alegre e regiões próximas"
+          },
+          {
+            "@type": "Offer",
+            "name": "Apresentações em grupo",
+            "description": "Apresentações com conjuntos ou bandas em concertos, eventos e festivais.",
+            "areaServed": "Porto Alegre e em todo o país"
+          }
+        ]
+      }
+      </script>
+
 </head>
 <body>
   <header>
@@ -81,7 +125,7 @@
             em sua primeira turnê pela Europa em janeiro de 2020 e lançou
             seu primeiro álbum como band leader intitulado Cristiano Ludwig
             Quarteto – Olhar para o Amanha – em 2021.</p>
-          <img src="images/crisSignature.png" alt="Cristiano's Signature" id="signature">
+          <img src="images/crisSignature.webp" alt="Cristiano's Signature" id="signature">
         </div>
       </div>
 
@@ -91,7 +135,7 @@
       <h2 class="music-title" id="music-title">Música</h2>
       <div class="wrapper-portrait">
         <picture>
-          <img class="portrait" src="images/CrisParkCropSitting.jpg" alt="Cristiano Sitting">
+          <img class="portrait" src="images/CrisParkCropSitting.webp" alt="Cristiano Sitting">
         </picture>
       </div>
 
@@ -132,7 +176,7 @@
               id="spot" class="fa-brands fa-spotify"></i></a>
         </div>
       </div>
-      <img class="music-notes" src="images/musicWriting.png" alt="Written Music">
+      <img class="music-notes" src="images/musicWriting.webp" loading="lazy" alt="Written Music">
     </section>
 
     <section class="evens video" id="video">
@@ -162,22 +206,23 @@
     <section class="odds contact" id="contact">
       <div class="wrapper-contact">
         <h2 class="contact-input">Contato</h2>
-        <form>
+        <form action="https://formsubmit.co/cristiano@gmail.com" subject="Website Message" method="POST">
           <div>
             <label for="name">Nome</label>
-            <input type="text" id="name" aria-label="name">
+            <input type="text" id="name" aria-label="name" required>
           </div>
           <div>
             <label for="email">Email</label>
-            <input type="text" id="email" aria-label="email">
+            <input type="text" id="email" aria-label="email" required>
+            <input type="hidden" name="_autoresponse" value="Obrigado pela sua mensagem! Responderei assim que puder.">
           </div>
           <div>
             <label for="phone">Celular</label>
-            <input type="text" id="phone" aria-label="phone">
+            <input type="text" id="phone" aria-label="phone" required>
           </div>
           <div>
             <label for="message">Mensagem</label>
-            <textarea name="message" id="message" cols="20" rows="3"></textarea>
+            <textarea name="message" id="message" cols="20" rows="3" required></textarea>
           </div>
           <div>
             <button class="text-bg-dark px-5" id="form-button">Enviar</button>
