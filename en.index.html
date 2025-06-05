@@ -110,8 +110,19 @@
         <h2 class="music-title" id="music-title">Music</h2>
         <div class="wrapper-portrait">
           <picture>
-            <img class="portrait" src="images/CrisParkCropSitting.webp" alt="Cristiano Sitting">
-          </picture>
+            <source type="image/webp" srcset="
+                          images/CrisParkCropSittingXs.webp 497w,
+                          images/CrisParkCropSittingSm.webp 696w,
+                          images/CrisParkCropSittingMed.webp 800w,
+                          images/CrisParkCropSittingLg.webp 1020w,
+                          images/CrisParkCropSittingXL.webp 1200w
+                        " sizes="(max-width: 500px) 497px,
+                               (max-width: 700px) 696px,
+                               (max-width: 900px) 800px,
+                               (max-width: 1100px) 1020px,
+                               1200px">
+            <img class="portrait" src="images/CrisParkCropSitting.jpg" alt="Cristiano Sitting">
+            </picture>
         </div>
 
         <div class="music-about">
@@ -152,7 +163,17 @@
                 target="_blank" class=""><i id="spot" class="fa-brands fa-spotify"></i></a>
           </div>
         </div>
-        <img class="music-notes" src="images/musicWriting.webp" alt="Written Music">
+        <picture>
+          <img class="music-notes" src="images/musicWriting.png" srcset="
+                    images/musicWritingSml.webp 721w,
+                    images/musicWritingMed.webp 1080w,
+                    images/musicWritingLg.webp 1560w,
+                    images/musicWritingXL.webp 1920w
+                    " sizes="(max-width: 720px) 721px,
+                           (max-width: 1080px) 1080px,
+                           (max-width: 1560px) 1560px,
+                           1920px" loading="lazy" alt="Written Music" />
+          </picture>
     </section>
 
     <section class="evens video" id="video">
