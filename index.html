@@ -260,19 +260,19 @@
     <section class="odds contact" id="contact">
       <div class="wrapper-contact">
         <h2 class="contact-input">Contato</h2>
-        <form action="https://formsubmit.co/cristiano@gmail.com" subject="Website Message" method="POST">
+        <form id="form-contact" action="https://formsubmit.co/cristiano@gmail.com" subject="Website Message" method="POST">
           <div>
             <label for="name">Nome</label>
-            <input type="text" id="name" aria-label="name" required>
+            <input type="text" id="name" name="name" aria-label="name" required>
           </div>
           <div>
             <label for="email">Email</label>
-            <input type="text" id="email" aria-label="email" required>
+            <input type="email" id="email" name="email" aria-label="email" required>
             <input type="hidden" name="_autoresponse" value="Obrigado pela sua mensagem! Responderei assim que puder.">
           </div>
           <div>
             <label for="phone">Celular</label>
-            <input type="text" id="phone" aria-label="phone" required>
+            <input type="tel" id="phone" name="phone" aria-label="phone" required>
           </div>
           <div>
             <label for="message">Mensagem</label>
